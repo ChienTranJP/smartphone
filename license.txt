@@ -1,0 +1,8 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}ChienTranJP © Sundai Denshi
+${licensePrefix}Project powered by html5 css and javascripts
+<#if licenseLast??>
+${licenseLast}
+</#if>
