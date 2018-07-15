@@ -14,6 +14,35 @@ window.addEventListener('DOMContentLoaded',function(){
         e.preventDefault();
         if(!subject.validity.valid || !memo.validity.validity){
             alert('件名、メモはいずれも必須です');
+            return;
+        }
+        
+        //page 124, 125
+        if(localStorage){
+            var cpos_latitude = sessionStorage.getItem('cpos_latitude');
+            var cpos_longitude = sessionStorage.getItem('cpos_longitude');
+            if (!cpos_latitude || !cpos_longitude){
+                alert('トップページからアクセスし直してください');
+                location.href = 'index.html';
+            }
+            
+            var list = localStorage.getItem('memolist');
+            if (!list){
+                list = [];
+            }else{
+                list = JSON.parse(list);
+            }
+            list.push({
+                latitude: cpos_latitude,
+                longitude: cpos_longitude,
+                subject: subject.value,
+                memo: memo.value,
+                update: new Date()
+            });
+            list = JSON.stringify(list);
+            localStorage.setItem('memolist', list);
+            location.href = 'index.html';
+          
             
         }
     },false);
