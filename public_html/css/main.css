@@ -22,12 +22,25 @@ body{
         top, #ffe699, #806000 
         );
     
-}#result, #menu > a, #list, input, textarea{
+}
+h1{
+    display: inline-block;
+    
+}
+#account a{
+    background-color: #adefaa;
+    display: inline-block;
+    float: right;
+}
+
+
+#result, #menu > a, #list, input, textarea, #account a{
     -webkit-border-radius: 8px;
      -moz-border-radius: 8px;
      border-radius: 8px;
 }
 #result{
+    clear: both;
     background-image: url(../image/bg.jpg);
     background-repeat: repeat;
     background-color: white;
@@ -39,7 +52,7 @@ body{
 }
 #menu > a {
     color: white;
-    background-color: #339966;
+    background-color: #4baf53;
     text-shadow: 1px 1px 3px #fff;
 }
 .btnmenu {
@@ -129,14 +142,18 @@ body{
  textarea{
      height:80px;
  }
- input[type="submit"], input[type="reset"]{
+/*input.txt file*/
+
+ input[type="submit"], input[type="reset"], input[type="button"]{
      background: -webkit-gradient(
          linear,
          left top,
          left bottom,
-         from(#fff),
-         to(#aaa)
+         from(#59af60),
+         to(#56895a)
          );
+     color: white;
+     font-weight: bold;
      background: -moz-linear-gradient(top, #fff, #aaa);
      background: linear-gradient(top, #fff, #aaa);
      margin-bottom: 5px;
@@ -144,12 +161,21 @@ body{
      -moz-box-shadow: 5px 5px 5px #555;
      box-shadow: 5px 5px 5px #555;
  }
- 
 
+ 
+ input[type="password"]{
+     margin-bottom: 30px;
+ }
 .field {
 
 }
 
 .btn {
 
+}
+
+@media screen and (max-width: 380px) {
+    h1{
+        display: none;
+    }
 }

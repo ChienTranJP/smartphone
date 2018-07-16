@@ -43,15 +43,18 @@ window.addEventListener('DOMContentLoaded', function () {
         }
     };
     var removememo = function (e) {
-        removemarker();
-        if (localStorage){
-            var id = e.target.getAttribute('data-id');
-            var list = JSON.parse(localStorage.getItem('memolist'));
-            list = list.filter(function(memo, c_index, ary){
-                if (id !== c_index.toString()) return memo;
-            });
-            localStorage.setItem('memolist', JSON.stringify(list));
-            showmemo();
+        var cf = confirm("位置情報を削除しますか。");
+        if (cf === true){
+            removemarker();
+            if (localStorage){
+                var id = e.target.getAttribute('data-id');
+                var list = JSON.parse(localStorage.getItem('memolist'));
+                list = list.filter(function(memo, c_index, ary){
+                    if (id !== c_index.toString()) return memo;
+                });
+                localStorage.setItem('memolist', JSON.stringify(list));
+                showmemo();
+            }
         }
     };
 //#page 155
@@ -63,10 +66,10 @@ window.addEventListener('DOMContentLoaded', function () {
                 list = JSON.parse(list);
                 for (var i = 0; i < list.length; i++){
                     msg += printf(
-                            '<li><a href="#" class="show" data-id="{0}">{1}</a>'
-                            + '<a class="del" href="#" data-id="{0}">削除</a></li>'
-                            , i, list[i].subject
-                            );
+                        '<li><a href="#" class="show" data-id="{0}">{1}</a>'
+                        + '<a class="del" href="#" data-id="{0}">削除</a></li>'
+                        , i, list[i].subject
+                        );
                     
                 }
                 var r_list = document.querySelector('#list');

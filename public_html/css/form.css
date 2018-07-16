@@ -1,0 +1,152 @@
+/*
+ChienTranJP © Sundai Denshi
+Project powered by html5 css and javascripts
+*/
+/* 
+    Created on : Jul 14, 2018, 9:38:45 AM
+    Author     : Vctran
+*/
+body{
+
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#ffe699),
+        to(#806000)
+        );
+    background-image: -moz-linear-gradient(
+        top, #ffe699, #806000 
+        );
+    background-image: linear-gradient(
+        top, #ffe699, #806000 
+        );
+    
+}
+h1{
+	font-size: 1.5em;
+	font-family:serif;
+	color:#C08B9B;
+	text-align: center;
+}
+form{
+	color: #666;
+	padding: 7px;
+	margin-bottom: 15px;
+	border: 3px solid #EEE9ED;
+	border-radius: 15px;
+}
+form p {
+	margin: 7px 0 0;
+	padding: 10px;
+	font-size: 12px;
+	background: #b5e5c7;
+	border-radius: 8px;
+	overflow: hidden;
+	clear: left;
+
+}
+form p:first-child {
+	margin:0;
+}
+form p:last-child {
+	text-align: center;
+}
+form p span {
+	width: 8em;
+	margin: 0px;
+	display: block;
+	float: left;
+}
+form p label input, .txtfield, form p select {
+	width: 16em;
+	padding: 3px;
+	margin: 0px;
+	color: #666;
+	border: solid 1px #ccc;
+	background: #fff;
+	box-shadow: 1px 1px 1px #fff;
+	border-radius:7px;
+}
+.txtfield {
+	height: 6em;
+}
+
+form p select, form p input[type="color"] {
+	width: 8em;
+}
+
+form p input[type="radio"]{
+	width: 1em;
+	margin-left: 1.5em;
+}
+form p span.radio {
+	display: block;
+	width: 10em;
+	float: left;
+}
+
+form p span.radio label input {
+	margin-right: 0.5em;
+}
+
+form p span.radio label:hover {
+	background:#C08B9B;
+	color: #fff;
+	font-weight:bold;
+}
+form p input[type="submit"],
+form p input[type="reset"] {
+	cursor: pointer;
+	font-size: 130%;
+	font-weight:bold;
+	width:100px;
+	padding: 4px 10px;
+	margin-right: 0.5em;
+	color: #fff;
+	border: 1px solid #bbb;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px #fff;
+        background: -webkit-gradient(
+         linear,
+         left top,
+         left bottom,
+         from(#59af60),
+         to(#56895a)
+         );
+        color: white;
+        font-weight: bold;
+        background: -moz-linear-gradient(top, #fff, #aaa);
+        background: linear-gradient(top, #fff, #aaa);
+        margin-bottom: 5px;
+        -webkit-box-shadow: 5px 5px 5px #555;
+        -moz-box-shadow: 5px 5px 5px #555;
+        box-shadow: 5px 5px 5px #555;
+	
+}
+form p input[type="submit"]:hover,
+form p input[type="reset"]:hover {
+	opacity: 0.8;
+	font-size: 135%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
