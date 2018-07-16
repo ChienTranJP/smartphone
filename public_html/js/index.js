@@ -46,7 +46,8 @@ window.addEventListener('DOMContentLoaded', function () {
         removemarker();
         if (localStorage){
             var id = e.target.getAttribute('data-id');
-            var list = list.filter(function(memo, c_index, ary){
+            var list = JSON.parse(localStorage.getItem('memolist'));
+            list = list.filter(function(memo, c_index, ary){
                 if (id !== c_index.toString()) return memo;
             });
             localStorage.setItem('memolist', JSON.stringify(list));
