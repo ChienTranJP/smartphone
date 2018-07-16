@@ -21,13 +21,13 @@ window.addEventListener('DOMContentLoaded',function(){
         if(localStorage){
             var cpos_latitude = sessionStorage.getItem('cpos_latitude');
             var cpos_longitude = sessionStorage.getItem('cpos_longitude');
-            if (!cpos_latitude || !cpos_longitude){
+            if (cpos_latitude ===null || cpos_longitude === null){
                 alert('トップページからアクセスし直してください');
                 location.href = 'index.html';
             }
             
             var list = localStorage.getItem('memolist');
-            if (!list){
+            if (list === null){
                 list = [];
             }else{
                 list = JSON.parse(list);
