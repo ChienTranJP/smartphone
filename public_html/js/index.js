@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded', function () {
         if(localStorage){
             var id = e.target.getAttribute('data-id');
             var list = localStorage.getItem('memolist');
-            if (!list){
+            if (list !== null){
                 list = JSON.parse(list);
                 var item = list[id];
                 var point = new google.maps.LatLng(
