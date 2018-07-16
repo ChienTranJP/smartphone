@@ -104,7 +104,7 @@ window.addEventListener('DOMContentLoaded', function () {
                     result.innerHTML= msg;
                     
                     c_point = new google.maps.LatLng(pos.coords.latitude, 
-                    pos.coords.longtitude);
+                    pos.coords.longitude);
                     
                     gmap = new google.maps.Map(result,{
                         zoom: 14,
