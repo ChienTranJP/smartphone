@@ -64,7 +64,7 @@ window.addEventListener('DOMContentLoaded', function () {
                 for (var i = 0; i < list.length; i++){
                     msg += printf(
                             '<li><a href="#" class="show" data-id="{0}">{1}</a>'
-                            + '<a class="del" href="#" data-id="{0}">X</a></li>'
+                            + '<a class="del" href="#" data-id="{0}">削除</a></li>'
                             , i, list[i].subject
                             );
                     
