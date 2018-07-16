@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>F215 チャンヴァンチェン　</title>
+		<link rel="stylesheet" href="css/form.css" />
+	</head>
+
+	<body>
+		<h1>会員登録</h1>
+		<form target="/top.html" method="post" action="">
+			<p>
+				<label>
+					<span>お名前：</span>
+					<input type="text" name ="name" maxlength="30" required
+					title: 30文字以内で入力してください>
+				</label>
+			</p>
+			<p>
+				<label>
+					<span>パスワード：</span>
+					<input type="password" name ="password" maxlength="20" 
+					pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{6,}" 
+					title="6文字以上、半角英数字で入力してください。大文字と小文字と数字が必要です"
+					required>
+				</label>
+			</p>
+			<p>
+				<label>
+					<span>メールアドレス：</span>
+					<input type="email" name ="email" maxlength="30" 
+					required title="abc@def.ghz のようなメールアドレスの形式で入力してください"
+					placeholder="例 :abcd@def.ghj">
+				</label>
+			</p>
+			<p>
+				<label>
+					<span>性別</span>
+					<span class="radio">
+						<label><input type="radio" name="gender" value="male" checked>男</label>
+						<label><input type="radio" name="gender" value="female">女</label>
+					</span>
+				</label>
+			</p>
+			<p>
+				<label><span>国籍</span>
+					<select name="nationality">
+						<option value="japan">日本</option>
+						<option value="bangladesh">バングラデシュ</option>
+						<option value="china">中国</option>
+						<option value="korea">韓国</option>
+						<option value="mongolia">モンゴル</option>
+						<option value="myanmar">ミャンマー</option>
+						<option value="nepal">ネパール</option>
+						<option value="srilanka">スリランカ</option>
+						<option value="taiwan">台湾</option>
+						<option value="vietnam">ベトナム</option>
+
+					</select>
+				
+
+				</label>
+			</p>
+			<p>
+				<label>
+					<span>生年月日</span>
+					<input type="date" name="date" min="1970-04-01" max="2000-04-30" required>
+				</label>
+			</p>
+
+			<p>
+				<label>
+					<span>あなたのあいさつは？</span>
+					<textarea name="greeting" class="txtfield" placeholder="こんにちは"></textarea>
+				</label>
+			</p>
+			<p>
+				<label><span>好きな色は</span>
+				<span>
+					<input type="color" name="color" list="colorType" value"#000000"
+					<datalist id ="colorType">
+						<option value="#000000"></option>
+						<option value="#FF0000"></option>
+						<option value="#00BFFF"></option>
+						<option value="#D2691E"></option>
+						<option value="#708090"></option>
+					</datalist>
+				</span>
+				</label>
+			</p>
+			<p>
+				<input type="submit" value="submit">
+				<input type="reset" value="reset">
+				</label>
+			</p>
+		</form>
+
+	</body>
+</html>
