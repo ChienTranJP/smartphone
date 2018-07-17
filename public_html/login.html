@@ -15,11 +15,13 @@ Project powered by html5 css and javascripts
     </head>
     <body>
         <form action="" method="POST">
-            <label>Username<input type="text"></label>
-            <label>Password<input type="password"></label>
-            <input class="btn" type="submit" value="submit">
-            <input class="btn" type="reset" value="reset">
-            <input class="btn" type="button" value="cancel">
+            <label>ユーザID<input type="text" id="username" autofocus 
+                               required></label>
+            <label>パスワード<input type="password" id="password" required
+                               ></label>
+            <input id="submit" class="btn" type="submit" value="ログイン">
+            <input id="reset" class="btn" type="reset" value="リセット">
+            <input id="cancel" class="btn" type="button" value="キャンセル">
        
         </form>
     </body>
