@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded',function(){
     
     save.addEventListener('click',function (e) {
         e.preventDefault();
-        if(subject.validity.valid === false || memo.validity.validity === false){
+        if(subject.validity.valid === false || memo.validity.valid === false){
             alert('件名、メモはいずれも必須です');
             return;
         }

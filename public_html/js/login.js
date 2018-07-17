@@ -8,10 +8,10 @@ window.addEventListener('DOMContentLoaded', function () {
     var password = document.querySelector('#password');
     var submit = document.querySelector('#submit');
     var reset = document.querySelector('#reset');
-    var cancel = document.querySelector('#cancel');
+    var goback = document.querySelector('#goback');
 
        
-    cancel.addEventListener('click', function () {
+    goback.addEventListener('click', function () {
         if (username !== null || password !== null){
             location.href = "index.html";
         }else{
@@ -21,6 +21,17 @@ window.addEventListener('DOMContentLoaded', function () {
             }
         }
     }, false);
+	
+	submit.addEventListener('click',function (e) {
+		e.preventDefault();
+		if(username.validity.valid === false){
+			alert('出席番号は大文字英字１文字と数字３文字');
+		}
+
+		if(password.validity.valid === false){
+			alert('パスワードは6文字以上、半角英数字で入力してください。\n 文字と数字が必要です');
+		}
+	},false);
     
 },false);
 

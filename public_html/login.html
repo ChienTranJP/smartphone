@@ -14,14 +14,19 @@ Project powered by html5 css and javascripts
 
     </head>
     <body>
+        
+        <a id="goback" onclick="history.back()">goback</a>
+        <h1>ロクイン</h1>
         <form action="" method="POST">
-            <label>ユーザID<input type="text" id="username" autofocus 
-                               required></label>
+            <label>出席番号<input type="text" id="username" autofocus 
+                              pattern="[A-Z]{1}[0-9]{3}" required> 
+            </label>
             <label>パスワード<input type="password" id="password" required
-                               ></label>
+                            pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{6,}"/>
+            </label>
             <input id="submit" class="btn" type="submit" value="ログイン">
             <input id="reset" class="btn" type="reset" value="リセット">
-            <input id="cancel" class="btn" type="button" value="キャンセル">
+
        
         </form>
     </body>

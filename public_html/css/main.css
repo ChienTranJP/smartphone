@@ -28,6 +28,19 @@ h1{
     display: inline-block;
     
 }
+#goback{
+	float: right;
+	cursor: pointer;
+	font-size: 50%;
+	font-weight:bold;
+	width:50px;
+	padding: 4px 10px;
+	background-color: #4db77e;
+	color: white;
+	border: 1px solid #bbb;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px #fff;
+}
 #account a{
     background-color: #adefaa;
     display: inline-block;

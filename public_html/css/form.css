@@ -23,6 +23,19 @@ body{
         );
     
 }
+#goback{
+	float: right;
+	cursor: pointer;
+	font-size: 50%;
+	font-weight:bold;
+	width:50px;
+	padding: 4px 10px;
+	background-color: #4db77e;
+	color: white;
+	border: 1px solid #bbb;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px #fff;
+}
 h1{
 	font-size: 1.5em;
 	font-family:serif;
@@ -30,6 +43,7 @@ h1{
 	text-align: center;
 }
 form{
+	clear: both;
 	color: #666;
 	padding: 7px;
 	margin-bottom: 15px;
@@ -96,7 +110,7 @@ form p span.radio label:hover {
 	font-weight:bold;
 }
 form p input[type="submit"],
-form p input[type="reset"] {
+form p input[type="reset"]{
 	cursor: pointer;
 	font-size: 130%;
 	font-weight:bold;
